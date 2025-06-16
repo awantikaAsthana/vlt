@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinod Luxury Travel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    }
+  </script> 
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navigation Bar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Vinod Luxury Travel</h1>
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#destinations" class="hover:text-blue-600">Destinations</a>
+        <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <button class="md:hidden text-blue-600" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>  
+    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+      <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#destinations" class="block py-2 text-gray-700 hover:text-blue-600">Destinations</a>
+      <a href="#testimonials" class="block py-2 text-gray-700 hover:text-blue-600">Testimonials</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section class="relative bg-cover bg-center bg-no-repeat min-h-[80vh] flex items-center" style="background-image: url('image.png');">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center w-full">
+      <div class="md:w-1/2 text-white mb-10 md:mb-0">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Discover New Places</h2>
+        <p class="text-lg mb-6">Your journey begins here. Explore stunning destinations across India and create unforgettable memories.</p>
+        <a href="#destinations" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">Start Exploring</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Top Destinations</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+          <img src="badrinath.png" alt="Badrinath Dham" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Badrinath Dham, Uttarakhand</h4>
+            <p class="text-sm text-gray-600">The land of Badrinath is full of spirituality and austerity.</p>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+          <img src="dwarika.png" alt="Dwarka" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Dwarka, Gujarat</h4>
+            <p class="text-sm text-gray-600">Dwarka was the legendary capital of the god Krishna.</p>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+          <img src="jaganath.png" alt="Jagannath Puri" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Jagannath Puri, Orissa</h4>
+            <p class="text-sm text-gray-600">Jagannath Temple is one of the most revered temples in India.</p>
+          </div>
+        </div>
+          <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+          <img src="jammu.png" alt="Jagannath Puri" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Jammu and Kashmir</h4>
+            <p class="text-sm text-gray-600">Kashmir is often called “Paradise on Earth” due to its breathtaking pristine.</p>
+          </div>
+        </div>
+          <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+          <img src="himachal.png" alt="Jagannath Puri" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Himachal Pradesh</h4>
+            <p class="text-sm text-gray-600">The shadowy valleys, rugged crags, glaciers and gigantic pines and roaring rivers and exquisite flora and fauna compose the symphony that is for ever Himachal</p>
+          </div>
+        </div>
+          <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md">
+          <img src="uttrakhand.png" alt="Jagannath Puri" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Uttrakhand</h4>
+            <p class="text-sm text-gray-600">The intricately embroidered featherweight scarves are a favourite with his customers in Mussoorie</p>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-blue-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">What Our Travelers Say</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-gray-700 italic mb-4">"Absolutely wonderful! The tour was perfectly planned and the locations were breathtaking."</p>
+          <p class="font-semibold text-blue-600">– Priya Sharma</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-gray-700 italic mb-4">"The team was professional, helpful, and made sure every detail was taken care of."</p>
+          <p class="font-semibold text-blue-600">– Rohit Mehta</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-gray-700 italic mb-4">"A luxurious and spiritual journey I’ll never forget. Highly recommended!"</p>
+          <p class="font-semibold text-blue-600">– Sneha Verma</p>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!-- Google Map Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8">Find Us</h3>
+      <div class="aspect-w-16 aspect-h-9 rounded-lg shadow-lg overflow-hidden">
+      
+
+
+        <iframe class="w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.728044148815!2d77.34243037529045!3d28.667860575645395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb86470d517b%3A0x7f3ccb3bb10bc812!2sVinod%20Luxury%20Travels!5e0!3m2!1sen!2sin!4v1750095037483!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-16 bg-blue-100">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-center mb-8">Contact Us</h3>
+              <a href="tel:+918802262079" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">Contact us</a>
+              <a href="wa.me/+918802262079" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">Whatsapp</a>
+
+    </div> 
+  </section> 
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center">
+      <p>&copy; 2025 Vinod Luxury Travel. All rights reserved.</p>
+      
+    </div>
+  </footer>
+
+</body>
+</html> 
